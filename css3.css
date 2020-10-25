@@ -1,0 +1,182 @@
+html {
+  margin: 0px;
+  padding: 0px;
+
+  /* background-image: url('./black-wide-technology-background_79145-249.jpg'); */
+}
+
+body {
+  font-family: 'Courier';
+  line-height: 1.88889;
+  color: rgb(36, 169, 231);
+  background-image: url('./black-wide-technology-background_79145-249.jpg');
+}
+
+p {
+  font-weight: bold;
+  font-family: 'Courier';
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0px;
+  text-align: justify;
+}
+
+h3 {
+  margin-left: 8%;
+  font: italic 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  /* margin-left: 10%; */
+  color: rgb(190, 163, 38);
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(183, 165, 223);
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(189, 134, 252);
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: rgb(150, 133, 186);
+}
+
+abbr {
+  border-bottom: none;
+}
+
+.page-wrapper {
+  /* background: url('./black-wide-technology-background_79145-249.jpg') left top; */
+  position: relative;
+}
+
+.intro {
+}
+
+header h1 {
+  background: url('./bg2.png') left no-repeat;
+  text-transform: capitalize;
+  font-family: courier;
+  text-shadow: rgb(1, 255, 0) 5px 5px 12px;
+  -webkit-text-stroke: 1px rgb(1, 255, 0);
+  font-size: 550%;
+  text-align: center;
+  background-size: cover;
+}
+
+header h2 {
+  /* background: url('./467e85c1-dd42-46b8-9dc6-3c7550a9495e_200x200.png') left top no-repeat transparent;
+  float: right; */
+  margin-right: 5%;
+  text-align: right;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  font-family: Courier;
+  font-size: 200%;
+  font-weight: 100;
+}
+
+header {
+  /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+}
+
+.summary {
+  clear: both;
+  float: left;
+}
+
+.summary p {
+  font: italic 1.1em / 2.2 georgia;
+  font-family: 'Courier';
+  text-align: center;
+}
+
+.preamble {
+  clear: left;
+  padding: 0px 10px;
+  margin-top: 155px;
+}
+
+.supporting {
+}
+
+footer {
+  text-align: center;
+  background: url(image/footer.png) no-repeat center;
+}
+
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+.sidebar {
+  /* position: absolute; */
+  top: 0px;
+  right: 0px;
+  margin-left: 10%;
+}
+
+.sidebar .wrapper {
+  font: 10px verdana, sans-serif;
+  background: url('') left top repeat-y transparent;
+}
+
+.sidebar h3.select {
+  background: url('./5f950d5740140669106327.gif') left top no-repeat transparent;
+  margin: 10px 0px 5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar h3.archives {
+  background: url('./5f951081afcc3616767402.gif') left top no-repeat transparent;
+  margin: 25px 0px 5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar h3.resources {
+  background: url('http://csszengarden.com/001/h6.gif') left top no-repeat transparent;
+  margin: 25px 0px 5px;
+  width: 63px;
+  height: 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  font-size: 140%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar li {
+  line-height: 1.3em;
+  background: url('http://csszengarden.com/001/cr1.gif') center top no-repeat transparent;
+  display: block;
+  list-style-type: none;
+}
+
+.sidebar li a:link {
+  color: rgb(152, 143, 94);
+}
+
+.sidebar li a:visited {
+  color: rgb(179, 174, 148);
+}
+
+.extra1 {
+  background: url('http://csszengarden.com/001/cr2.gif') left top no-repeat transparent;
+  position: absolute;
+}

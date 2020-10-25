@@ -1,0 +1,370 @@
+/****----ASSIGNMENT 2 ON CSS ZEN GARDEN -----****/
+html /*set background color for  page*/ {
+  position: relative; /*set position for the page and this position is fixed and not relative to its parent elements*/
+  padding: 0; /*clear area arount the content or no padding*/
+  margin: 0; /*no margin*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(image/background1.gif); /*because the text font is white, setting background color enables to see text
+	in case of IMAGE-OFF browsers because without settings background color, it sets to default as white,
+	white fonts cant be seen in white background*/
+}
+
+#container {
+  /*set font for page content*/
+  font: 90% monospace, sans-serif; /*set font Georgia sans-serif for page content*/
+  color: #01ff00;
+  /*set area for page container*/
+  position: absolute; /*set position for area of container and this position is fixed and not relative to other elements*/
+  width: 1000px;
+  height: 2015px;
+  padding: 0;
+  margin-left: 200px;
+
+  /*set front background*/
+  background: url(image/bg.gif) no-repeat;
+  background-position: top left; /*set position for background image*/
+  background-size: 770px 1288px;
+}
+
+/***---SETTINGS FOR PAGE HEADER---***/
+
+#pageHeader h1 /*settings for 'CSS ZEN GARDEN'*/ {
+  text-transform: capitalize; /*transform the 1st letter of 'CSS' into uppercase from lowercas*/
+  font-family: courier; /*in case the browser do not recognize 1 font,
+	it will use the next font. Using Image Replacement for Text results in better-looking page,however, 
+	it will lead to accessibility issues with screen readers or browsers with IMAGE OFF. 
+	Therefore, in this page, to ensure full accessibility, I use beautiful fonts
+	instead of Image replacement*/
+
+  text-shadow: 5px 5px 12px #01ff00;
+  -webkit-text-stroke: 1px #01ff00;
+  font-size: 550%; /*set font larger. I use percentage instead of the relative pt 
+   because each browser sets different default font size
+	, percentage seems to be work better with different browsers*/
+  font-weight: 400; /*make text look thinner than normal(normal value is 400) 
+	so that CSS Zen Garden may look more graceful*/
+  color: white;
+  /* Set an area to put 'CSS Zen Garden' inside with the accurate position using top, left, width and height*/
+  position: absolute; /* places the elements in normal flow,and not related to its parent elements */
+  top: 10px; /*set distance from top*/
+  left: 240px; /*set distance from left*/
+  width: 700px; /*set width for the area */
+  height: 30px; /*set height for the area*/
+}
+
+#pageHeader h2 /*settings for 'The Beauty of CSS Zen Garden'*/ {
+  font-family: 'Courier'; /*set 2 font types that browers can use for pager header 2*/
+  font-size: 250%; /*make text larger*/
+  font-weight: 100; /*make text look thinner and more graceful*/
+
+  /* Set a virtual box for 'The Beauty of CSS Zen Garden'to wrap in with the accurate position using top, left, width and height*/
+  position: absolute; /*places the elements in normal flow, with positioning starting from that position */
+  top: 120px; /*set distance from top*/
+  left: 250px; /*set distance from left*/
+  width: 700px; /*set width for the area */
+  height: 30px; /*set height for the area*/
+}
+
+#pageHeader h2 acronym /*No dotted lines for the word 'CSS' 
+  in 'The Beauty of CSS Design'*/ {
+  border-bottom: none; /*set no border-bottom style for the word 'CSS',
+	but it still displays its acronym when mousing over */
+}
+
+/***--SETTINGS FOR QUICK SUMMARY---***/
+#quickSummary /*settings for 'A demonstration of ....'*/ {
+  /*set an area for quicksummary */
+  position: relative; /*position is related to its parent elements*/
+  top: 190px; /*set distance from top*/
+  left: 220px; /*set distance from left*/
+  width: 580px; /*set width for the area */
+  height: 150px; /*set height for the area*/
+  border: 5px solid #01ff00;
+  padding: 10px;
+  margin: 10px;
+
+  /* font settings for quicksummary */
+  font-family: monospace; /*set font family*/
+  font-size: 17px; /*set font larger*/
+  color: #01ff00; /*set font color as light cyan so that it looks paler than Headers.
+	So that headers can be emphasized*/
+  line-height: 30px; /*line spacing between lines*/
+  text-align: right; /*set text right-aligned*/
+  padding-top: -66px;
+}
+
+/***----Settings for 'The Road to Enlightenment'----***/
+#preamble h3 {
+  background: url(image/wave.gif) no-repeat; /*insert a tinny lotus flower
+   to decorate the title of the paragraph*/
+
+  /*settings for size, position of that tinny lotus flower*/
+  position: relative;
+  width: 700px;
+  height: 35px;
+  left: 30px;
+  top: 260px;
+  text-shadow: 5px 5px 12px #01ff00;
+  /* Font settings for the title 'The Road to Enlightenment'*/
+  font-family: courier; /*beautiful,graceful font to decorate the title */
+  font-size: 30px; /*larger font size*/
+
+  font-weight: 300; /*make text thinner */
+}
+#preamble h3 span /*Generate a distance between tinny flower and the title.
+ so that the title doesn't cross over the image*/ {
+  position: relative;
+  left: 60px; /*Make the title do not cross over the tinny flower*/
+  text-align: left; /*set the title left-aligned */
+}
+
+#preamble p /*Settings for the paragraph under the 'The Road to Enlightenment'*/ {
+  width: 700px; /*set the width of the paragraph*/
+  top: 260px;
+  position: relative;
+  left: 30px; /*make the paragraph indented compared to the title*/
+  text-align: justify;
+}
+
+/*** --- SETTINGS FOR SUPPORTING TEXT----****/
+/*The effects for supporting text are the same as preamble's ones. However, they are in different div ids, therefore, 
+CSS is duplicatẹ. It's hard to avoid duplicating CSS settings in this case.*/
+
+/***----Settings for 'WHAT IS THIS ABOUT'----***/
+#explanation h3 {
+  background: url(image/wave.gif) no-repeat; /*insert a tinny lotus flower
+   to decorate the title of the paragraph*/
+
+  /*settings for size, position of that tinny lotus flower*/
+  width: 700px;
+  height: 35px;
+  top: 260px;
+  position: relative;
+  left: 30px;
+  text-shadow: 5px 5px 12px #01ff00;
+  /* Font settings for the title 'What is this about'*/
+  font-family: courier; /*beautiful,graceful font to decorate the title */
+  font-size: 30px; /*larger font size*/
+  font-weight: 300; /*make text thinner */
+}
+#explanation h3 span /*Generate a distance between tinny flower and the title.
+ so that the title doesn't cross over the image*/ {
+  position: relative;
+  left: 60px; /*Make the title do not cross over the tinny flower*/
+  text-align: left; /*set the title left-aligned */
+}
+
+#explanation p /*Settings for the paragraph under the 'WHAT IS THIS ABOUT'*/ {
+  width: 700px; /*set the width of the paragraph*/
+  top: 260px;
+  position: relative;
+  left: 30px; /*make the paragraph indented compared to the title*/
+  text-align: justify;
+}
+
+/***----Settings for 'PARTICIPATION'----***/
+#participation h3 {
+  background: url(image/wave.gif) no-repeat; /*insert a tinny lotus flower
+   to decorate the title of the paragraph*/
+
+  /*settings for size, position of that tinny lotus flower*/
+  width: 700px;
+  height: 35px;
+  top: 260px;
+  position: relative;
+  left: 30px;
+
+  text-shadow: 5px 5px 12px #01ff00;
+  /* Font settings for the title 'What is this about'*/
+  font-family: courier; /*beautiful,graceful font to decorate the title */
+  font-size: 30px; /*larger font size*/
+  font-weight: 300; /*make text thinner */
+}
+#participation h3 span /*Generate a distance between tinny flower and the title.
+ so that the title doesn't cross over the image*/ {
+  position: relative;
+  left: 60px; /*Make the title do not cross over the tinny flower*/
+  text-align: left; /*set the title left-aligned */
+}
+
+#participation p /*Settings for the paragraph under the 'PARTICIPATION'*/ {
+  width: 700px; /*set the width of the paragraph*/
+  top: 260px;
+  position: relative;
+  left: 30px; /*make the paragraph indented compared to the title*/
+  text-align: justify;
+}
+
+/***----Settings for 'BENEFITS'----***/
+#benefits h3 {
+  background: url(image/wave.gif) no-repeat; /*insert a tinny lotus flower
+  to decorate the title of the paragraph*/
+
+  /*settings for size, position of that tinny lotus flower*/
+  width: 700px;
+  height: 35px;
+  top: 260px;
+  position: relative;
+  left: 30px;
+  text-shadow: 5px 5px 12px #01ff00;
+  /* Font settings for the title 'What is this about'*/
+  font-family: courier; /*beautiful,graceful font to decorate the title */
+  font-size: 30px; /*larger font size*/
+  font-weight: 300; /*make text thinner */
+}
+#benefits h3 span /*Generate a distance between tinny flower and the title.
+ so that the title doesn't cross over the image*/ {
+  position: relative;
+  left: 60px; /*Make the title do not cross over the tinny flower*/
+  text-align: left; /*set the title left-aligned */
+}
+
+#benefits p /*Settings for the paragraph under the 'BENEFITS'*/ {
+  width: 700px; /*set the width of the paragraph*/
+  top: 260px;
+  position: relative;
+  left: 30px; /*make the paragraph indented compared to the title*/
+  text-align: justify;
+}
+
+/***----Settings for 'REQUIREMENTS'----***/
+#requirements h3 {
+  background: url(image/wave.gif) no-repeat; /*insert a tinny lotus flower
+  to decorate the title of the paragraph*/
+
+  /*settings for size, position of that tinny lotus flower*/
+  width: 700px;
+  height: 35px;
+  top: 260px;
+  position: relative;
+  left: 30px;
+  text-shadow: 5px 5px 12px #01ff00;
+  /* Font settings for the title 'What is this about'*/
+  font-family: courier; /*beautiful,graceful font to decorate the title */
+  font-size: 30px; /*larger font size*/
+  font-weight: 300; /*make text thinner */
+}
+#requirements h3 span /*Generate a distance between tinny flower and the title.
+ so that the title doesn't cross over the image*/ {
+  position: relative;
+  left: 60px; /*Make the title do not cross over the tinny flower*/
+  text-align: left; /*set the title left-aligned */
+}
+
+#requirements p /*Settings for the paragraph under the 'REQUIREMENTS'*/ {
+  width: 700px; /*set the width of the paragraph*/
+  top: 260px;
+  position: relative;
+  left: 30px; /*make the paragraph indented compared to the title*/
+  text-align: justify;
+}
+
+/***----SETTINGS FOR LINK TAB ON THE RIGHT---***/
+
+#linkList /*decorations for Link bar*/
+  
+	/* make links aligned
+	and put them on the top right */ {
+  position: absolute;
+  width: 450px;
+  height: 60px;
+  top: 450px;
+  left: 750px;
+  text-align: left;
+  font-size: 100%; /*make fonts lager than normal*/
+}
+
+#lselect h3 /*Settings for menu 'SELECT A DESIGN'*/ {
+  text-transform: uppercase; /*set 'Select a design' into 'SELECT A DESIGN'*/
+  font-size: 130%; /*make text 130% larger*/
+  font-weight: 300; /* make text look thinner than normal, normal is 400*/
+  background: url(image/select.png) no-repeat; /*set background for SELECT A DESIGN*/
+  width: 210px; /*width of background image */
+  height: 40px; /*height of background image*/
+  text-align: center;
+
+  /*set the menu tab have further distance compared to link lists*/
+  position: relative;
+  padding-top: 7px;
+  padding-left: 10px;
+  left: 25px;
+}
+#lselect ul li /*settings for links under SELECT A DESIGN*/ {
+  border-bottom: solid 1px; /* set-dotted lines under links of lselect*/
+  width: 190px; /*set width for dotted lines*/
+  line-height: 200%; /*set line-spacing between lines*/
+}
+#larchives h3 /*set background image for ARCHIVES tab*/ {
+  text-transform: uppercase; /*set 'Archives' into 'ARCHIVES'*/
+  font-size: 130%; /*make text 130% larger*/
+  font-weight: 300; /* make text look thinner than normal, normal is 400*/
+  background: url(image/archives.png) no-repeat; /*set background for Archives*/
+  width: 210px; /*width of background image */
+  height: 40px; /*height of background image*/
+  /*set the menu tab have further distance compared to link lists*/
+  position: relative;
+  left: 25px;
+  text-align: center;
+  padding-top: 7px;
+}
+#larchives ul li /*settings for links under ARCHIVES tab*/ {
+  border-bottom: solid 1px; /* set-dotted lines under links of ARCHIVES*/
+  width: 190px; /*set width for dotted lines*/
+  line-height: 200%; /*set line-spacing between lines*/
+}
+#lresources h3 /*set background image for RESOURCES tab*/ {
+  text-transform: uppercase; /*set 'Resources' into 'RESOURCES'*/
+  font-size: 130%; /*make text 130% larger*/
+  font-weight: 300; /* make text look thinner than normal, normal is 400*/
+  background: url(image/resources.png) no-repeat; /*set background for SELECT A DESIGN*/
+  width: 210px; /*width of background image */
+  height: 40px; /*height of background image*/
+  /*set the menu tab have further distance compared to link lists*/
+  position: relative;
+  left: 25px;
+  text-align: center;
+  padding-top: 7px;
+}
+#lresources ul li /*settings for links under ARCHIVES tab*/ {
+  border-bottom: solid 1px; /* set-dotted lines under links of ARCHIVES*/
+  width: 190px; /*set width for dotted lines*/
+  line-height: 200%; /*set line-spacing between lines*/
+}
+
+/***------SETTINGS FOR FOOTER-----***/
+#footer {
+  /*set size of box container for the image*/
+  width: 600px;
+  height: 35px;
+
+  /*set position of the image*/
+  position: relative;
+  top: 260px;
+  left: 120px;
+
+  text-align: center; /*set aligment of  footer content*/
+  word-spacing: 9px; /*set spacing between characters*/
+  font-size: 15px;
+
+  /*set background for footer*/
+  background: url(image/footer.png) no-repeat center;
+}
+
+/***----SETTINGS FOR HYPERLINK----***/
+a:link /*settings for a link without visited */ {
+  font-weight: bold; /*link is bold*/
+  text-decoration: none; /*no underline*/
+  color: white; /*color for a link without visited*/
+}
+a:visited /*settings for a visited link*/ {
+  font-weight: bold; /*link is bold*/
+  text-decoration: none; /*no underline*/
+  color: white; /*color changes for a visited link*/
+}
+a:hover, a:active /*settings for a link when hovering*/ {
+  text-decoration: underline; /*link is underlined */
+  color: white; /*color changes when hovering*/
+}
